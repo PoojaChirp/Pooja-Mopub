@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         mAdAdapter.registerAdRenderer(adRenderer);
 
+
+        myListView = (ListView) findViewById(R.id.list);
         myListView.setAdapter(mAdAdapter);
 
 
