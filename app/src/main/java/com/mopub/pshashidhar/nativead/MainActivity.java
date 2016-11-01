@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> itemsAdapter =
                 new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, Arrays.asList("cell1", "cell2", "cell3", "cell4", "cell5", "cell6", "cell7", "cell8"));
 
-        MoPubAdAdapter mAdAdapter = new MoPubAdAdapter(this, itemsAdapter, adPositioning);
+         mAdAdapter = new MoPubAdAdapter(this, itemsAdapter, adPositioning);
 
         mAdAdapter.registerAdRenderer(adRenderer);
 
@@ -84,5 +84,6 @@ public class MainActivity extends AppCompatActivity {
         mAdAdapter.destroy();
         super.onDestroy();
     }
+
 
 }
